@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Token System*/
+
+:root {
+    --color-primary:rgb(28, 130, 189);
+    --color-secondary: rgb(73, 71, 71);
+    --color-white: white;
+    --color-black: black;
+
+    /***********tipography********/
+    --font-family-default :Open Sans , sans serif;
+
+
+    --font-size-sm : 0.75rem;
+    --font-size-md :1rem;
+    --font-size-lg :1.25rem;
+
+    /***********Space*************/
+
+    --space-xxs : 0.5rem;
+    --space-xs  : 0.75rem;
+    --space-sm  : 1rem;
+    --space-md  :1.5rem;
+    --space-lg  : 2rem;
+    --space-xl  : 3rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--color-primary);
+  font-family: Opens sans, sans-serif;
+}
+.container {
+  margin:var(--space-xl) auto;
+  padding: var(--space-lg);
+  background-color: var(--color-white);
+  width: 650px;
+  height: auto;
+  border-radius: 0.75em;
+  box-shadow: 0 8px 16px rgba(75, 90, 42, 0.5);
+
+}
+.active {
+  color: var(--color-secondary);
+  padding-block: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
